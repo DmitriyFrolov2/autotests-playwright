@@ -1,0 +1,5 @@
+# Default ignored files
+/../../autotests-playwright /.idea/shelf/
+/../../autotests-playwright /.idea/workspace.xml
+# Editor-based HTTP Client requests
+/../../autotests-playwright /.idea/httpRequests/
