@@ -2,7 +2,7 @@ from playwright.sync_api import sync_playwright
 
 with sync_playwright() as playwright:
     # Открываем браузер и создаем новую страницу
-    browser = playwright.chromium.launch(headless=False)
+    browser = playwright.firefox.launch(headless=False)
     page = browser.new_page()
 
     # Переходим на страницу входа

@@ -13,7 +13,7 @@ def log_response(response: Response):
 
 with sync_playwright() as playwright:
     # Открываем браузер и создаем новую страницу
-    browser = playwright.chromium.launch(headless=False)
+    browser = playwright.firefox.launch(headless=False)
     page = browser.new_page()
 
     # Переходим на страницу входа
