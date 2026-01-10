@@ -15,3 +15,4 @@ class Input(BaseElement):
         locator = self.get_locator(**kwargs)
         expect(locator).to_have_value(value)
 
+
