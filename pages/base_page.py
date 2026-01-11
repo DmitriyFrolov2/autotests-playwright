@@ -1,5 +1,5 @@
-from playwright.sync_api import Page
-
+from playwright.sync_api import Page, expect
+from typing import Pattern
 
 class BasePage:
     # Конструктор класса, принимающий объект Page
@@ -14,3 +14,6 @@ class BasePage:
     def reload(self):
         self.page.reload(
             wait_until="domcontentloaded")  # используется domcontentloaded для того, чтобы дождаться, когда DOM страницы будет полностью загружен
+
+    def check_current_url(self, expect_url: Pattern[str]):
+        expect(self.page).to_have_url(expect_url)

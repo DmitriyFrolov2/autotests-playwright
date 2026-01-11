@@ -1,4 +1,4 @@
-from playwright.sync_api import sync_playwright, expect
+from playwright.sync_api import sync_playwright
 
 with sync_playwright() as playwright:
     browser = playwright.firefox.launch(headless=False)
@@ -19,24 +19,11 @@ with sync_playwright() as playwright:
     registration_button = page.get_by_test_id('registration-page-registration-button')
     registration_button.click()
 
-    context.storage_state(path="browser_state.json")
+    context.storage_state(path="../browser_state.json")
 
 with sync_playwright() as playwright:
     browser = playwright.firefox.launch(headless=False)
     context = browser.new_context(storage_state="browser_state.json")
     page = context.new_page()
 
-    page.goto("https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/courses")
-
-    courses_page_title = page.get_by_test_id('courses-list-toolbar-title-text')
-    expect(courses_page_title).to_be_visible()
-    expect(courses_page_title).to_have_text('Courses')
-
-    empty_state_title = page.get_by_test_id('courses-list-empty-view-title-text')
-    expect(empty_state_title).to_be_visible()
-    expect(empty_state_title).to_have_text('There is no results')
-
-    empty_state_description = page.get_by_test_id('courses-list-empty-view-description-text')
-    expect(empty_state_description).to_be_visible()
-    expect(empty_state_description).to_have_text('Results from the load test pipeline will be displayed here')
-
+    page.goto("https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/dashboard")

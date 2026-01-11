@@ -81,3 +81,5 @@ cython_debug/
 
 # Драйвера для бразуера
 /browsers/
+#Training and example files - not part of the project
+training_examples
