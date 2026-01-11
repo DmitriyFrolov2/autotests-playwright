@@ -1,14 +1,26 @@
 import pytest
 from playwright.sync_api import Page
-
+import allure
 from pages.authentication.login_page import LoginPage
 from pages.authentication.registration_page import RegistrationPage
 from pages.dashboard.dashboard_page import DashboardPage
+from tools.allure.epics import AllureEpic
+from tools.allure.features import AllureFeature
+from tools.allure.stories import AllureStory
+from tools.allure.tags import AllureTag
+from allure_commons.types import Severity
 
 
 @pytest.mark.regression
 @pytest.mark.authorization
+@allure.tag(AllureTag.REGRESSION, AllureTag.AUTHORIZATION)
+@allure.epic(AllureEpic.LMS)
+@allure.feature(AllureFeature.AUTHENTICATION)
+@allure.story(AllureStory.AUTHORIZATION)
 class TestAuthorization:
+    @allure.tag(AllureTag.USER_LOGIN)
+    @allure.title("Вход пользователя с верными email и паролем")
+    @allure.severity(Severity.BLOCKER)
     def test_successful_authorization(
             self,
             login_page: LoginPage,
@@ -16,7 +28,8 @@ class TestAuthorization:
             registration_page: RegistrationPage
     ):
         registration_page.visit("https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/auth/registration")
-        registration_page.registration_form.fill(email="usertest.name@gmail.com", username="usernametest", password="password")
+        registration_page.registration_form.fill(email="usertest.name@gmail.com", username="usernametest",
+                                                 password="password")
         registration_page.click_registration_button()
 
         dashboard_page.dashboard_toolbar_view.check_visible()
@@ -39,6 +52,9 @@ class TestAuthorization:
             ("  ", "password")
         ]
     )
+    @allure.tag(AllureTag.USER_LOGIN)
+    @allure.title("Вход пользователя с неверным email или паролем")
+    @allure.severity(Severity.CRITICAL)
     def test_wrong_email_or_password_authorization(self, chromium_page: Page, email: str, password: str):
         login_page = LoginPage(page=chromium_page)
         login_page.visit("https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/auth/login")
@@ -46,6 +62,9 @@ class TestAuthorization:
         login_page.click_login_button()
         login_page.check_visible_wrong_email_or_password_alert()
 
+    @allure.tag(AllureTag.NAVIGATION)
+    @allure.title("Переход со страницы авторизации на страницу регистрации")
+    @allure.severity(Severity.NORMAL)
     def test_navigate_from_authorization_to_registration(
             self,
             login_page: LoginPage,

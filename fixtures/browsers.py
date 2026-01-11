@@ -22,13 +22,13 @@ def initialize_browser_state(playwright: Playwright):
     registration_page.registration_form.fill(email='user.name@gmail.com', username='username', password='password')
     registration_page.click_registration_button()
 
-    context.storage_state(path="browser-state.json")
+    context.storage_state(path="browser_state.json")
     browser.close()
 
 
 @pytest.fixture
 def chromium_page_with_state(initialize_browser_state, playwright: Playwright) -> Page:
     browser = playwright.chromium.launch(headless=False)
-    context = browser.new_context(storage_state="browser-state.json")
+    context = browser.new_context(storage_state="browser_state.json")
     yield context.new_page()
     browser.close()
