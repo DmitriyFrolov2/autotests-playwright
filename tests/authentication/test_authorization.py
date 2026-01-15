@@ -65,10 +65,10 @@ class TestAuthorization:
     @allure.tag(AllureTag.USER_LOGIN)
     @allure.title("Вход пользователя с неверным email или паролем")
     @allure.severity(Severity.CRITICAL)
-    def test_wrong_email_or_password_authorization(self, chromium_page: Page, email: str, password: str):
-        login_page = LoginPage(page=chromium_page)
+    def test_wrong_email_or_password_authorization(self, page: Page, email: str, password: str):
+        login_page = LoginPage(page=page)
         login_page.visit(AppRoute.LOGIN)
-        login_page.login_form.fill(email=email, password=password)
+        login_page.login_form.fill(email=settings.test_user.email, password=settings.test_user.password,)
         login_page.click_login_button()
         login_page.check_visible_wrong_email_or_password_alert()
 
