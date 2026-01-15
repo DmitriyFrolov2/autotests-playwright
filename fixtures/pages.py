@@ -34,5 +34,5 @@ def create_course_page(page_with_state: Page) -> CreateCoursePage:
 
 
 @pytest.fixture
-def dashboard_page_with_state(chromium_page_with_state: Page) -> DashboardPage:
-    return DashboardPage(page=chromium_page_with_state)
+def dashboard_page_with_state(page_with_state: Page) -> DashboardPage:
+    return DashboardPage(page=page_with_state)

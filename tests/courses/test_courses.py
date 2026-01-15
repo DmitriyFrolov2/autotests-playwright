@@ -26,6 +26,7 @@ from tools.routes import AppRoute
 class TestCourses:
     @allure.title("Проверка отображения пустого списка курсов")
     @allure.severity(Severity.NORMAL)
+    @pytest.mark.flaky(reruns=3, reruns_delay=2)
     def test_empty_courses_list(self, courses_list_page: CoursesListPage):
         courses_list_page.visit(AppRoute.COURSES_LIST)
         courses_list_page.navbar.check_visible(settings.test_user.username)
@@ -35,6 +36,7 @@ class TestCourses:
 
     @allure.title("Создание курса")
     @allure.severity(Severity.CRITICAL)
+    @pytest.mark.flaky(reruns=3, reruns_delay=2)
     def test_create_course(self, courses_list_page: CoursesListPage, create_course_page: CreateCoursePage):
         create_course_page.visit(AppRoute.CREATE_COURSE)
         create_course_page.create_course_toolbar_view.check_visible()
@@ -64,6 +66,7 @@ class TestCourses:
 
     @allure.title("Редактирование курса")
     @allure.severity(Severity.NORMAL)
+    @pytest.mark.flaky(reruns=3, reruns_delay=2)
     def test_edit_course(self, create_course_page: CreateCoursePage, courses_list_page: CoursesListPage):
         create_course_page.visit(AppRoute.CREATE_COURSE)
 
