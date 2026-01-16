@@ -1,5 +1,8 @@
 from playwright.sync_api import Page, Locator, expect
 import allure
+from tools.logger import get_logger
+
+logger = get_logger("BASE_ELEMENT")
 
 # Этот класс описывает общие методы и логику для работы с любыми элементами на странице
 # Это решение позволяет разделить интерфейсы в зависимости от типов элементов, что делает код более чистым и логически структурированным.
@@ -17,23 +20,32 @@ class BaseElement:
     def get_locator(self, nth: int = 0, **kwargs) -> Locator:  # объект Locator для взаимодействия с элементом
         # Инициализирует объект локатора, подставляя динамические значения в локатор.
         locator = self.locator.format(**kwargs)
-        with allure.step(f'Получаем элемент с атрибутом data-testid="{locator}" с индексом {nth}'):
+        step = f'Получаем элемент с атрибутом data-testid="{locator}" с индексом {nth}'
+
+        with allure.step(step):
+            logger.info(step)
             return self.page.get_by_test_id(locator).nth(nth)
 
     def click(self, nth: int = 0, **kwargs):
-        with allure.step(f'Кликаем по {self.type_of} "{self.name}"'):
-            # "Лениво" инициализируем локатор
+        step = f'Кликаем по {self.type_of} "{self.name}"'
+
+        with allure.step(step):
             locator = self.get_locator(nth, **kwargs)
-            # Выполняем нажатие на элемент
+            logger.info(step)
             locator.click()
 
     def check_visible(self, nth: int = 0, **kwargs):
-        with allure.step(f'Проверяем, что {self.type_of} "{self.name}" отображается на странице'):
+        step = f'Проверяем, что {self.type_of} "{self.name}" отображается на странице'
+
+        with allure.step(step):
             locator = self.get_locator(nth, **kwargs)
-            # Проверяем, что элемент виден на странице
+            logger.info(step)
             expect(locator).to_be_visible()
 
     def check_have_text(self,  text: str, nth: int = 0, **kwargs):
-        with allure.step(f'Проверяем, что у {self.type_of} "{self.name}" текст равен "{text}"'):
+        step = f'Проверяем, что у {self.type_of} "{self.name}" текст равен "{text}"'
+
+        with allure.step(step):
             locator = self.get_locator(nth, **kwargs)
+            logger.info(step)
             expect(locator).to_have_text(text)
