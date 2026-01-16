@@ -81,3 +81,13 @@ cython_debug/
 /browsers/
 #Training and example files - not part of the project
 training_examples
+
+# allure
+allure-results
+allure-report
+
+# testing artifacts
+*.html
+*.json
+videos
+tracing
