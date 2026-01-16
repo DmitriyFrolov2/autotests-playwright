@@ -1,0 +1,64 @@
+INFO     BASE_PAGE:base_page.py:18 Открываем url "AppRoute.REGISTRATION"
+INFO     BASE_ELEMENT:base_element.py:26 Получаем элемент с атрибутом data-testid="registration-form-email-input" с индексом 0
+INFO     INPUT:input.py:22 Заполняем input "Email" значением "user.name@gmail.com"
+INFO     BASE_ELEMENT:base_element.py:26 Получаем элемент с атрибутом data-testid="registration-form-email-input" с индексом 0
+INFO     INPUT:input.py:31 Проверяем, что в input "Email" значение "user.name@gmail.com"
+INFO     BASE_ELEMENT:base_element.py:26 Получаем элемент с атрибутом data-testid="registration-form-username-input" с индексом 0
+INFO     INPUT:input.py:22 Заполняем input "Username" значением "username"
+INFO     BASE_ELEMENT:base_element.py:26 Получаем элемент с атрибутом data-testid="registration-form-username-input" с индексом 0
+INFO     INPUT:input.py:31 Проверяем, что в input "Username" значение "username"
+INFO     BASE_ELEMENT:base_element.py:26 Получаем элемент с атрибутом data-testid="registration-form-password-input" с индексом 0
+INFO     INPUT:input.py:22 Заполняем input "Password" значением "password"
+INFO     BASE_ELEMENT:base_element.py:26 Получаем элемент с атрибутом data-testid="registration-form-password-input" с индексом 0
+INFO     INPUT:input.py:31 Проверяем, что в input "Password" значение "password"
+INFO     BASE_ELEMENT:base_element.py:26 Получаем элемент с атрибутом data-testid="registration-page-registration-button" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:34 Кликаем по button "Registration"
+INFO     BASE_PAGE:base_page.py:18 Открываем url "AppRoute.COURSES_LIST"
+INFO     BASE_ELEMENT:base_element.py:26 Получаем элемент с атрибутом data-testid="navigation-navbar-app-title-text" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем, что Text "App title" отображается на странице
+INFO     BASE_ELEMENT:base_element.py:26 Получаем элемент с атрибутом data-testid="navigation-navbar-app-title-text" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:50 Проверяем, что у Text "App title" текст равен "UI Course"
+INFO     BASE_ELEMENT:base_element.py:26 Получаем элемент с атрибутом data-testid="navigation-navbar-welcome-title-text" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем, что Text "Welcome title" отображается на странице
+INFO     BASE_ELEMENT:base_element.py:26 Получаем элемент с атрибутом data-testid="navigation-navbar-welcome-title-text" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:50 Проверяем, что у Text "Welcome title" текст равен "Welcome, username!"
+INFO     BASE_ELEMENT:base_element.py:26 Получаем элемент с атрибутом data-testid="logout-drawer-list-item-icon" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем, что Icon "Sidebar logout icon" отображается на странице
+INFO     BASE_ELEMENT:base_element.py:26 Получаем элемент с атрибутом data-testid="logout-drawer-list-item-title-text" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем, что Text "Sidebar logout text" отображается на странице
+INFO     BASE_ELEMENT:base_element.py:26 Получаем элемент с атрибутом data-testid="logout-drawer-list-item-title-text" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:50 Проверяем, что у Text "Sidebar logout text" текст равен "Logout"
+INFO     BASE_ELEMENT:base_element.py:26 Получаем элемент с атрибутом data-testid="logout-drawer-list-item-button" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем, что button "Sidebar logout button" отображается на странице
+INFO     BASE_ELEMENT:base_element.py:26 Получаем элемент с атрибутом data-testid="courses-drawer-list-item-icon" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем, что Icon "Sidebar courses icon" отображается на странице
+INFO     BASE_ELEMENT:base_element.py:26 Получаем элемент с атрибутом data-testid="courses-drawer-list-item-title-text" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем, что Text "Sidebar courses text" отображается на странице
+INFO     BASE_ELEMENT:base_element.py:26 Получаем элемент с атрибутом data-testid="courses-drawer-list-item-title-text" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:50 Проверяем, что у Text "Sidebar courses text" текст равен "Courses"
+INFO     BASE_ELEMENT:base_element.py:26 Получаем элемент с атрибутом data-testid="courses-drawer-list-item-button" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем, что button "Sidebar courses button" отображается на странице
+INFO     BASE_ELEMENT:base_element.py:26 Получаем элемент с атрибутом data-testid="dashboard-drawer-list-item-icon" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем, что Icon "Sidebar dashboard icon" отображается на странице
+INFO     BASE_ELEMENT:base_element.py:26 Получаем элемент с атрибутом data-testid="dashboard-drawer-list-item-title-text" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем, что Text "Sidebar dashboard text" отображается на странице
+INFO     BASE_ELEMENT:base_element.py:26 Получаем элемент с атрибутом data-testid="dashboard-drawer-list-item-title-text" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:50 Проверяем, что у Text "Sidebar dashboard text" текст равен "Dashboard"
+INFO     BASE_ELEMENT:base_element.py:26 Получаем элемент с атрибутом data-testid="dashboard-drawer-list-item-button" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем, что button "Sidebar dashboard button" отображается на странице
+INFO     BASE_ELEMENT:base_element.py:26 Получаем элемент с атрибутом data-testid="courses-list-toolbar-title-text" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем, что Text "Title" отображается на странице
+INFO     BASE_ELEMENT:base_element.py:26 Получаем элемент с атрибутом data-testid="courses-list-toolbar-title-text" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:50 Проверяем, что у Text "Title" текст равен "Courses"
+INFO     BASE_ELEMENT:base_element.py:26 Получаем элемент с атрибутом data-testid="courses-list-toolbar-create-course-button" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем, что button "Button" отображается на странице
+INFO     BASE_ELEMENT:base_element.py:26 Получаем элемент с атрибутом data-testid="courses-list-empty-view-icon" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем, что Icon "Icon courses-list" отображается на странице
+INFO     BASE_ELEMENT:base_element.py:26 Получаем элемент с атрибутом data-testid="courses-list-empty-view-title-text" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем, что Text "Title text courses-list" отображается на странице
+INFO     BASE_ELEMENT:base_element.py:26 Получаем элемент с атрибутом data-testid="courses-list-empty-view-title-text" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:50 Проверяем, что у Text "Title text courses-list" текст равен "There is no results"
+INFO     BASE_ELEMENT:base_element.py:26 Получаем элемент с атрибутом data-testid="courses-list-empty-view-description-text" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем, что Text "Description text courses-list" отображается на странице
+INFO     BASE_ELEMENT:base_element.py:26 Получаем элемент с атрибутом data-testid="courses-list-empty-view-description-text" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:50 Проверяем, что у Text "Description text courses-list" текст равен "Results from the load test pipeline will be displayed here"
