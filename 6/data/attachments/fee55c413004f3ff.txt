@@ -1,0 +1,19 @@
+INFO     BASE_PAGE:base_page.py:18 Открываем url "AppRoute.REGISTRATION"
+INFO     BASE_ELEMENT:base_element.py:26 Получаем элемент с атрибутом data-testid="registration-form-email-input" с индексом 0
+INFO     INPUT:input.py:22 Заполняем input "Email" значением "user.name@gmail.com"
+INFO     BASE_ELEMENT:base_element.py:26 Получаем элемент с атрибутом data-testid="registration-form-email-input" с индексом 0
+INFO     INPUT:input.py:31 Проверяем, что в input "Email" значение "user.name@gmail.com"
+INFO     BASE_ELEMENT:base_element.py:26 Получаем элемент с атрибутом data-testid="registration-form-username-input" с индексом 0
+INFO     INPUT:input.py:22 Заполняем input "Username" значением "username"
+INFO     BASE_ELEMENT:base_element.py:26 Получаем элемент с атрибутом data-testid="registration-form-username-input" с индексом 0
+INFO     INPUT:input.py:31 Проверяем, что в input "Username" значение "username"
+INFO     BASE_ELEMENT:base_element.py:26 Получаем элемент с атрибутом data-testid="registration-form-password-input" с индексом 0
+INFO     INPUT:input.py:22 Заполняем input "Password" значением "password"
+INFO     BASE_ELEMENT:base_element.py:26 Получаем элемент с атрибутом data-testid="registration-form-password-input" с индексом 0
+INFO     INPUT:input.py:31 Проверяем, что в input "Password" значение "password"
+INFO     BASE_ELEMENT:base_element.py:26 Получаем элемент с атрибутом data-testid="registration-page-registration-button" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:34 Кликаем по button "Registration"
+INFO     BASE_ELEMENT:base_element.py:26 Получаем элемент с атрибутом data-testid="dashboard-toolbar-title-text" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем, что Text "Title" отображается на странице
+INFO     BASE_ELEMENT:base_element.py:26 Получаем элемент с атрибутом data-testid="dashboard-toolbar-title-text" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:50 Проверяем, что у Text "Title" текст равен "Dashboard"
