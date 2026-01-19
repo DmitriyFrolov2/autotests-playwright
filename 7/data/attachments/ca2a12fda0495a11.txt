@@ -1,0 +1,113 @@
+INFO     BASE_PAGE:base_page.py:18 Открываем url "AppRoute.CREATE_COURSE"
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="create-course-preview-image-upload-widget-input" с индексом 0
+INFO     FILE_INPUT:file_input.py:18 Загружаем файл "testdata/files/image.png" в FileInput "Upload file input"
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="create-course-form-title-input" с индексом 0
+INFO     INPUT:input.py:30 Заполняем input "Course title" значением "Playwright"
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="create-course-form-title-input" с индексом 0
+INFO     INPUT:input.py:41 Проверяем, что в input "Course title" значение "Playwright"
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="create-course-form-estimated-time-input" с индексом 0
+INFO     INPUT:input.py:30 Заполняем input "Estimated time" значением "2 weeks"
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="create-course-form-estimated-time-input" с индексом 0
+INFO     INPUT:input.py:41 Проверяем, что в input "Estimated time" значение "2 weeks"
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="create-course-form-description-input" с индексом 0
+INFO     TEXTAREA:textarea.py:22 Заполняем textarea "Description" значением "Playwright"
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="create-course-form-description-input" с индексом 0
+INFO     TEXTAREA:textarea.py:30 Проверяем, что в textarea "Description" значение "Playwright"
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="create-course-form-max-score-input" с индексом 0
+INFO     INPUT:input.py:30 Заполняем input "Max score" значением "100"
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="create-course-form-max-score-input" с индексом 0
+INFO     INPUT:input.py:41 Проверяем, что в input "Max score" значение "100"
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="create-course-form-min-score-input" с индексом 0
+INFO     INPUT:input.py:30 Заполняем input "Min score" значением "10"
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="create-course-form-min-score-input" с индексом 0
+INFO     INPUT:input.py:41 Проверяем, что в input "Min score" значение "10"
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="create-course-toolbar-create-course-button" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:56 Кликаем по button "Create course"
+INFO     BASE_COMPONENT:base_component.py:16 Проверяем, что текущий URL соответствует шаблону ".*/#/courses"
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="course-preview-image" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:66 Проверяем, что Image "Preview" отображается на странице
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="course-widget-title-text" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:66 Проверяем, что Text "Title" отображается на странице
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="course-widget-title-text" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:77 Проверяем, что у Text "Title" текст равен "Playwright"
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="course-max-score-info-row-view-text" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:66 Проверяем, что Text "Max score" отображается на странице
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="course-max-score-info-row-view-text" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:77 Проверяем, что у Text "Max score" текст равен "Max score: 100"
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="course-min-score-info-row-view-text" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:66 Проверяем, что Text "Min score" отображается на странице
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="course-min-score-info-row-view-text" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:77 Проверяем, что у Text "Min score" текст равен "Min score: 10"
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="course-estimated-time-info-row-view-text" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:66 Проверяем, что Text "Estimated time" отображается на странице
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="course-estimated-time-info-row-view-text" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:77 Проверяем, что у Text "Estimated time" текст равен "Estimated time: 2 weeks"
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="course-view-menu-button" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:56 Кликаем по button "Menu"
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="course-view-edit-menu-item" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:56 Кликаем по button "Edit"
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="create-course-form-title-input" с индексом 0
+INFO     INPUT:input.py:30 Заполняем input "Course title" значением "Python"
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="create-course-form-title-input" с индексом 0
+INFO     INPUT:input.py:41 Проверяем, что в input "Course title" значение "Python"
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="create-course-form-estimated-time-input" с индексом 0
+INFO     INPUT:input.py:30 Заполняем input "Estimated time" значением "67 weeks"
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="create-course-form-estimated-time-input" с индексом 0
+INFO     INPUT:input.py:41 Проверяем, что в input "Estimated time" значение "67 weeks"
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="create-course-form-description-input" с индексом 0
+INFO     TEXTAREA:textarea.py:22 Заполняем textarea "Description" значением "Python"
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="create-course-form-description-input" с индексом 0
+INFO     TEXTAREA:textarea.py:30 Проверяем, что в textarea "Description" значение "Python"
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="create-course-form-max-score-input" с индексом 0
+INFO     INPUT:input.py:30 Заполняем input "Max score" значением "45500"
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="create-course-form-max-score-input" с индексом 0
+INFO     INPUT:input.py:41 Проверяем, что в input "Max score" значение "45500"
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="create-course-form-min-score-input" с индексом 0
+INFO     INPUT:input.py:30 Заполняем input "Min score" значением "210"
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="create-course-form-min-score-input" с индексом 0
+INFO     INPUT:input.py:41 Проверяем, что в input "Min score" значение "210"
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="create-course-toolbar-create-course-button" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:56 Кликаем по button "Create course"
+INFO     BASE_COMPONENT:base_component.py:16 Проверяем, что текущий URL соответствует шаблону ".*/#/courses"
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="course-preview-image" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:66 Проверяем, что Image "Preview" отображается на странице
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="course-widget-title-text" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:66 Проверяем, что Text "Title" отображается на странице
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="course-widget-title-text" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:77 Проверяем, что у Text "Title" текст равен "Python"
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="course-max-score-info-row-view-text" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:66 Проверяем, что Text "Max score" отображается на странице
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="course-max-score-info-row-view-text" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:77 Проверяем, что у Text "Max score" текст равен "Max score: 45500"
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="course-min-score-info-row-view-text" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:66 Проверяем, что Text "Min score" отображается на странице
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="course-min-score-info-row-view-text" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:77 Проверяем, что у Text "Min score" текст равен "Min score: 210"
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="course-estimated-time-info-row-view-text" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:66 Проверяем, что Text "Estimated time" отображается на странице
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="course-estimated-time-info-row-view-text" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:77 Проверяем, что у Text "Estimated time" текст равен "Estimated time: 67 weeks"
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="course-view-menu-button" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:56 Кликаем по button "Menu"
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="course-view-edit-menu-item" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:56 Кликаем по button "Edit"
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="create-course-form-title-input" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:66 Проверяем, что input "Course title" отображается на странице
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="create-course-form-title-input" с индексом 0
+INFO     INPUT:input.py:41 Проверяем, что в input "Course title" значение "Python"
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="create-course-form-estimated-time-input" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:66 Проверяем, что input "Estimated time" отображается на странице
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="create-course-form-estimated-time-input" с индексом 0
+INFO     INPUT:input.py:41 Проверяем, что в input "Estimated time" значение "67 weeks"
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="create-course-form-description-input" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:66 Проверяем, что textarea "Description" отображается на странице
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="create-course-form-description-input" с индексом 0
+INFO     TEXTAREA:textarea.py:30 Проверяем, что в textarea "Description" значение "Python"
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="create-course-form-max-score-input" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:66 Проверяем, что input "Max score" отображается на странице
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="create-course-form-max-score-input" с индексом 0
+INFO     INPUT:input.py:41 Проверяем, что в input "Max score" значение "45500"
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="create-course-form-min-score-input" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:66 Проверяем, что input "Min score" отображается на странице
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="create-course-form-min-score-input" с индексом 0
+INFO     INPUT:input.py:41 Проверяем, что в input "Min score" значение "210"
