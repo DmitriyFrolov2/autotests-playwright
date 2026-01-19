@@ -1,0 +1,16 @@
+INFO     BASE_PAGE:base_page.py:18 Открываем url "AppRoute.LOGIN"
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="login-page-registration-link" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:56 Кликаем по Link "Registration"
+INFO     BASE_PAGE:base_page.py:35 Проверяем, что текущий url соответствует шаблону ".*/#/auth/registration"
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="registration-form-email-input" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:66 Проверяем, что input "Email" отображается на странице
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="registration-form-email-input" с индексом 0
+INFO     INPUT:input.py:41 Проверяем, что в input "Email" значение ""
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="registration-form-username-input" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:66 Проверяем, что input "Username" отображается на странице
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="registration-form-username-input" с индексом 0
+INFO     INPUT:input.py:41 Проверяем, что в input "Username" значение ""
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="registration-form-password-input" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:66 Проверяем, что input "Password" отображается на странице
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="registration-form-password-input" с индексом 0
+INFO     INPUT:input.py:41 Проверяем, что в input "Password" значение ""

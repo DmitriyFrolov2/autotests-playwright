@@ -1,0 +1,16 @@
+INFO     BASE_PAGE:base_page.py:18 Открываем url "AppRoute.LOGIN"
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="login-form-email-input" с индексом 0
+INFO     INPUT:input.py:30 Заполняем input "Email" значением "user.name@gmail.com"
+INFO     UI_COVERAGE_TRACKER_STORAGE:storage.py:34 Results directory does not exist, creating: coverage-results
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="login-form-email-input" с индексом 0
+INFO     INPUT:input.py:41 Проверяем, что в input "Email" значение "user.name@gmail.com"
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="login-form-password-input" с индексом 0
+INFO     INPUT:input.py:30 Заполняем input "Password" значением "password"
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="login-form-password-input" с индексом 0
+INFO     INPUT:input.py:41 Проверяем, что в input "Password" значение "password"
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="login-page-login-button" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:56 Кликаем по button "Login"
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="login-page-wrong-email-or-password-alert" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:66 Проверяем, что Text "Wrong email or password" отображается на странице
+INFO     BASE_ELEMENT:base_element.py:29 Получаем элемент с атрибутом data-testid="login-page-wrong-email-or-password-alert" с индексом 0
+INFO     BASE_ELEMENT:base_element.py:77 Проверяем, что у Text "Wrong email or password" текст равен "Wrong email or password"
