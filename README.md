@@ -1,78 +1,109 @@
-# UI Course Automation Tests
+# UI Автотесты — Playwright + Python
 
-This project implements automated tests for
-the [UI Course Test Application](https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/auth/login). The
-tests are written using **Python**, **Pytest**, **Allure** and **Playwright**. The test application’s source code is available
-on [GitHub](https://github.com/Nikita-Filonov/qa-automation-engineer-ui-course).
+Фреймворк для автоматизированного тестирования веб-приложения
+[UI Course Test Application](https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/auth/login).
 
-## Project Overview
 
-The goal of this project is to automate the testing of the UI Course application. The automated tests verify various
-functionalities of the application to ensure its stability and correctness. The project structure follows best practices
-for organizing test code with clear, maintainable scripts.
+![Allure Overview](docs/allure-overview.jpg)
 
-## Getting Started
+---
 
-### Clone the Repository
+## Ключевые особенности
 
-To get started, clone the project repository using Git:
+- **Паттерны:** Page Object, Page Component, Page Factory
+- **Кросс-браузерное тестирование:** Chromium, WebKit, Firefox
+- **Оптимизированная авторизация** — browser state сохраняется один раз и переиспользуется во всей сессии
+- **data-test-id** — самостоятельно внёс атрибуты в исходный код тестируемого приложения для стабильной и явной локации элементов без хрупких CSS/XPath-селекторов
+- **CI/CD:** GitHub Actions → автозапуск тестов → публикация Allure-отчёта на GitHub Pages
+- **Allure Report:** видео прохождения, трейсы Playwright, метаинформация по каждому тесту
 
-```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+---
+
+## Технологии
+
+| Инструмент | Назначение |
+|---|---|
+| Python | Язык разработки |
+| Playwright | Браузерная автоматизация |
+| Pytest | Фреймворк для тестов, фикстуры, параметризация |
+| Allure | Отчётность: видео, трейсы, шаги |
+| Pydantic | Модели конфигурации и тестовых данных |
+| GitHub Actions | CI/CD пайплайн |
+
+---
+
+## Структура проекта
+
+```
+autotests-playwright/
+├── pages/               # Page Object — страницы приложения
+├── components/          # Page Component — переиспользуемые компоненты
+├── templates/           # Page Factory — фабрика страниц
+├── elements/            # Базовые элементы UI
+├── tests/               # Тест-кейсы
+├── fixtures/            # Pytest-фикстуры
+├── testdata/            # Тестовые данные и файлы
+├── tools/               # Вспомогательные утилиты
+├── training_examples/   # Примеры и обучающие материалы
+├── conftest.py          # Глобальные фикстуры и настройки
+├── config.py            # Конфигурация окружения (Pydantic)
+├── pytest.ini           # Настройки Pytest
+└── requirements.txt     # Зависимости
 ```
 
-### Create a Virtual Environment
+---
 
-It's recommended to use a virtual environment to manage project dependencies. Follow the instructions for your operating
-system:
+## Запуск тестов
 
-#### Linux / MacOS
+### 1. Клонировать репозиторий
 
 ```bash
-python3 -m venv venv
-source venv/bin/activate
+git clone https://github.com/DmitriyFrolov2/autotests-playwright.git
+cd autotests-playwright
 ```
 
-#### Windows
+### 2. Создать виртуальное окружение и установить зависимости
 
 ```bash
 python -m venv venv
-venv\Scripts\activate
-```
-
-### Install Dependencies
-
-Once the virtual environment is activated, install the project dependencies listed in `requirements.txt`:
-
-```bash
+source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### Additional Playwright Setup (if needed)
-
-If you're running Playwright for the first time, you might need to install the required browsers:
+### 3. Установить браузеры Playwright
 
 ```bash
 playwright install
 ```
 
-### Running the Tests with Allure Report Generation
-
-To run the tests and generate an Allure report, use the following command:
+### 4. Запустить тесты с генерацией Allure-отчёта
 
 ```bash
 pytest -m "regression" --alluredir=./allure-results
 ```
 
-This will execute all tests in the project and display the results in the terminal.
-
-### Viewing the Allure Report
-
-After the tests have been executed, you can generate and view the Allure report with:
+### 5. Открыть отчёт локально
 
 ```bash
 allure serve allure-results
 ```
 
-This command will open the Allure report in your default web browser.
+---
+
+## Allure-отчёт
+
+Актуальный отчёт публикуется автоматически после каждого запуска CI:
+
+🔗 [Открыть Allure Report](https://dmitriyfrolov2.github.io/autotests-playwright/8/index.html)
+
+![Allure Suite Detail](docs/allure-suite.jpg)
+
+---
+
+## Кросс-браузерные конфигурации
+
+В репозитории представлены отдельные конфигурации для разных комбинаций браузеров:
+
+- `chromium-webkit/` — Chromium + WebKit
+- `chromium-webkit-firefox/` — все три браузера
+- `webkit-firefox/` — WebKit + Firefox
