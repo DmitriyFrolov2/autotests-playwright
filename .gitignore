@@ -97,3 +97,6 @@ coverage.html
 coverage-results
 coverage-history.json
 coverage-report.json
+
+# training_examples
+training_examples/
